@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  .header {
+    margin: 120px auto;
+    max-inline-size: 300px;
+    inline-size: 100%;
+    background: rgb(108, 204, 248);
+    padding: 25px;
+    border-radius: 5px;
+  }
+  body {
+    block-size: 100vh;
+    inline-size: 100%;
+    background: linear-gradient(to bottom, #454c4f 0%, #f1efec 100%);
+  }
+  .header h1 {
+    font-size: 30px;
+    color: rgb(26, 24, 24);
+  }
+  .input-section form{
+    display: flex;
+  }
+
+  .input-section button {
+    transition-duration: 1000ms;
+    transition: 0.4s;
+    padding: 9px 10px;
+    block-size: 40px;
+    background: #3DA5D9;
+    cursor: pointer;
+    margin-inline-start: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px
+    
+  }
+
+  .input-section {
+    padding: 20px 0px;
+    display: flex;
+  }
+
+  form input {
+    font-size: 19px;
+    border: none;
+    block-size: 40px;
+    border-radius: 3px;
+    padding-inline-start: 15px;
+    outline: none;
+    max-inline-size: 250px;
+  }
+  
+  .input-section button:hover {
+    transform: scale(1.05);
+  
+    background: #0fa2e6;
+  }
+  
+  .todo-list li {
+    list-style: none;
+    position: relative;
+    block-size: 46px;
+    line-height: 46px;
+    background: #f2f2f2;
+    margin-block-end: 10px;
+    border: 10px;
+    padding: 0px 10px;
+    cursor: default;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  .todo-list li span {
+    position: absolute;
+    inset-inline-end: -40px;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 1000ms;
+    transition: 0.4s;
+    padding-inline-end: 4%;
+  }
+  .todo-list li:hover span {
+    inset-inline-end: 0px;
+  }
+  .todo-list li span:hover {
+    transform: scale(1.1);
+    color: red;
+  }
+  Footer
